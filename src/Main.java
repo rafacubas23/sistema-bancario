@@ -20,7 +20,7 @@ public class Main {
             System.out.println("8. Utilizar crédito na conta corrente");
             System.out.println("9. Pagar a Fatura na conta corrente");
             System.out.println("10. Aplicar rendimento na conta poupança");
-            System.out.println("11. Sair");
+            System.out.println("0. Sair");
             System.out.print("Escolha uma opção: ");
             opcao = scanner.nextInt();
 
@@ -69,7 +69,7 @@ public class Main {
                 case 10:
                     contaPoupanca.aplicarRendimentoMensal();
                     break;
-                case 11:
+                case 0:
                     System.out.println("Saindo do sistema bancário.");
                     break;
                 default:
