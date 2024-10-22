@@ -9,13 +9,12 @@ public class Cliente {
         this.telefone = telefone;
     }
 
-    public void ShowInfo(){
+    public void showInfo(){
         System.out.println("Nome: " + nome);
         System.out.println("CPF: " + cpf);
         System.out.println("Telefone: " + telefone);
     }
 
-// getters and setters //
     public String getNome() {
         return nome;
     }
@@ -27,6 +26,4 @@ public class Cliente {
     public String getTelefone() {
         return telefone;
     }
-// end of getters and setters //
-
 }
