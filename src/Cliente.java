@@ -9,7 +9,7 @@ public class Cliente {
         this.telefone = telefone;
     }
 
-    public void showInfo(){
+    public void ShowInfo(){
         System.out.println("Nome: " + nome);
         System.out.println("CPF: " + cpf);
         System.out.println("Telefone: " + telefone);

@@ -43,7 +43,7 @@ public class ContaBase {
 
 
     public void ShowInfo() {
-        this.Titular.showInfo();
+        this.Titular.ShowInfo();
         System.out.println("Número da Conta: " + this.Numero_Conta);
         System.out.println("Saldo: R$" + this.Saldo);
     }
