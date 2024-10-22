@@ -4,8 +4,10 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        ContaCorrente contaCorrente = new ContaCorrente("Rafael Cubas", "12345-6", 2000.00, 500.00);
-        ContaPoupanca contaPoupanca = new ContaPoupanca("Silvia Hauffe", "98765-4", 1000.00);
+        Cliente clienteRafael = new Cliente("Rafael Cubas","000.000.123-43","(47)99876-2562");
+        Cliente clienteCarlos = new Cliente("Carlos Magno","000.000.132-58","(41)99729-0512");
+        ContaCorrente contaCorrente = new ContaCorrente(clienteRafael,"16675-2",1000.0,700.0);
+        ContaPoupanca contaPoupanca = new ContaPoupanca(clienteCarlos, "14567-8", 2000.0);
 
         int opcao;
         do {

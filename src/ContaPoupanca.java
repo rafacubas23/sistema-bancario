@@ -1,5 +1,5 @@
 class ContaPoupanca extends ContaBase {
-    public ContaPoupanca(String Titular, String Numero_Conta, double SaldoInicial) {
+    public ContaPoupanca(Cliente Titular, String Numero_Conta, double SaldoInicial) {
         super(Titular, Numero_Conta, SaldoInicial);
     }
 

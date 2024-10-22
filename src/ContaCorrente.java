@@ -2,7 +2,7 @@ class ContaCorrente extends ContaBase {
     private double Limite_Credito;
     private double Fatura;
 
-    public ContaCorrente(String Titular, String Numero_Conta, double SaldoInicial, double Limite_Credito) {
+    public ContaCorrente(Cliente Titular, String Numero_Conta, double SaldoInicial, double Limite_Credito) {
         super(Titular, Numero_Conta, SaldoInicial);
         this.Limite_Credito = Limite_Credito;
         this.Fatura = 0.0;

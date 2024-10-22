@@ -1,10 +1,10 @@
 
 public class ContaBase {
-    private final String Titular;
+    private final Cliente Titular;
     private final String Numero_Conta;
     private double Saldo;
 
-    public ContaBase(String Titular, String Numero_Conta, double SaldoInicial) {
+    public ContaBase(Cliente Titular, String Numero_Conta, double SaldoInicial) {
         this.Titular = Titular;
         this.Numero_Conta = Numero_Conta;
         this.Saldo = SaldoInicial;
@@ -34,20 +34,22 @@ public class ContaBase {
         if (amount > 0.0 && amount <= this.Saldo) {
             this.Saldo -= amount;
             recipient.depositar(amount);
-            System.out.println("Transferência de R$" + amount + " para " + recipient.getTitular() + " realizada com sucesso.");
+            System.out.println("Transferência de R$" + amount + " para " + recipient.getTitular().getNome() + " realizada com sucesso.");
         } else {
             System.out.println("Transferência inválida. Verifique o saldo ou o valor inserido.");
         }
 
     }
 
+
     public void ShowInfo() {
-        System.out.println("Nome do Titular: " + this.Titular);
+        this.Titular.showInfo();
         System.out.println("Número da Conta: " + this.Numero_Conta);
         System.out.println("Saldo: R$" + this.Saldo);
     }
 
-    public String getTitular() {
+// getters and setters //
+    public Cliente getTitular() {
         return this.Titular;
     }
 
@@ -58,4 +60,6 @@ public class ContaBase {
     public double getSaldo() {
         return this.Saldo;
     }
+// end of getters and setters //
+
 }
