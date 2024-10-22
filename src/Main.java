@@ -28,10 +28,10 @@ public class Main {
 
             switch (opcao) {
                 case 1:
-                    contaCorrente.ShowInfo();
+                    contaCorrente.showInfo();
                     break;
                 case 2:
-                    contaPoupanca.ShowInfo();
+                    contaPoupanca.showInfo();
                     break;
                 case 3:
                     System.out.print("Valor para depositar na conta corrente: R$");
