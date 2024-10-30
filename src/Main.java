@@ -22,6 +22,8 @@ public class Main {
             System.out.println("8. Utilizar crédito na conta corrente");
             System.out.println("9. Pagar a Fatura na conta corrente");
             System.out.println("10. Aplicar rendimento na conta poupança");
+            System.out.println("11. Mostrar histórico de transações da conta corrente");
+            System.out.println("12. Mostrar histórico de transações da conta poupança");
             System.out.println("0. Sair");
             System.out.print("Escolha uma opção: ");
             opcao = scanner.nextInt();
@@ -70,6 +72,12 @@ public class Main {
                     break;
                 case 10:
                     contaPoupanca.aplicarRendimentoMensal();
+                    break;
+                case 11:
+                    contaCorrente.showTransacoes();
+                    break;
+                case 12:
+                    contaPoupanca.showTransacoes();
                     break;
                 case 0:
                     System.out.println("Saindo do sistema bancário.");
