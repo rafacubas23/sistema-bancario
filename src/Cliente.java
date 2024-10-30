@@ -9,10 +9,8 @@ public class Cliente {
         this.telefone = telefone;
     }
 
-    public void showInfo(){
-        System.out.println("Nome: " + nome);
-        System.out.println("CPF: " + cpf);
-        System.out.println("Telefone: " + telefone);
+    public String getInfo(){
+        return String.format("Nome: %s, CPF: %s, Telefone: %s", nome, cpf, telefone);
     }
 
     public String getNome() {

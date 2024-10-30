@@ -32,8 +32,7 @@ class ContaCorrente extends ContaBase {
 
     }
 
-    public void showInfo() {
-        super.showInfo();
-        System.out.println("Limite de Crédito Disponível: R$" + this.limiteCredito);
+    public String getInfo() {
+        return super.getInfo()+String.format("Limite de Crédito Disponível: R$" + this.limiteCredito);
     }
 }

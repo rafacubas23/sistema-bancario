@@ -57,10 +57,8 @@ public abstract class ContaBase {
         }
     }
 
-    public void showInfo() {
-        this.titular.showInfo();
-        System.out.println("Número da Conta: " + this.numeroConta);
-        System.out.println("Saldo: R$" + this.saldo);
+    public String getInfo() {
+        return this.titular.getInfo()+String.format("Número da Conta: %s\nSaldo: R$%.2f", this.numeroConta, this.saldo);
     }
 
     public Cliente getTitular() {
